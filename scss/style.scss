@@ -1,3 +1,36 @@
+.box {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.btn-secondary, .btn-primary {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+}
+.btn-secondary:hover, .btn-primary:hover {
+  transform: scale(0.8);
+}
+
+.btn-primary {
+  background-color: #001c47;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #a2d0fc;
+  color: black;
+}
+
+.box {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
 
 * {
   box-sizing: border-box;
@@ -6,8 +39,8 @@
 }
 
 body {
-  background-color: $light-color;
-  font-family: $font-stack;
+  background-color: #FFC300;
+  font-family: Trebuchet MS, Arial, sans-serif;
   line-height: 1;
 }
 
@@ -20,32 +53,87 @@ a {
 }
 
 .hero {
-  // This is where the bulk of the SCSS styling needs to be done
-
-  // Take a look at the other files we've built already. How can they be useful here?
-
-  // Also, take time to review the features of SCSS we've already covered:
-  // 1. $variables
-  // 2. nesting (dont forget about the ampersand (&) parent selector!)
-  // 3. At-Rules
+  background-color: #000814;
+  color: white;
+  height: 600px;
 }
 
-// This code is related to some of the aspects of SCSS we have yet to cover.
-// While you don't have to mess with it, it would be advisable to attempt to understand its functionality.
-$spaceamounts: (1,2,3,4,5);
+.m-1 {
+  margin: 1rem;
+}
 
-@each $space in $spaceamounts {
-  .m-#{$space} {
-    margin: #{$space}rem;
-  }
-  .my-#{$space} {
-    margin: #{$space}rem 0;
-  }
+.my-1 {
+  margin: 1rem 0;
+}
 
-  .p-#{$space} {
-    padding: #{$space}rem;
-  }
-  .py-#{$space} {
-    padding: #{$space}rem 0;
-  }
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
 }
